@@ -1,0 +1,84 @@
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+
+a:active {
+    color: black;
+}
+
+#header{
+	display: block;
+	height: 140px;
+	border: 1px black solid;
+	margin-right: auto;
+	margin-left: auto;
+	width: 900px;
+}
+
+
+#logo{
+    width:300px;
+    float:left;
+}
+
+#titre{
+	float:left;
+	width: 600px;
+	text-align: center;
+}
+
+#contenu{
+	display: block;
+	overflow:auto; 
+	border: 1px black solid;
+	margin-right: auto;
+	margin-left: auto;
+	width: 900px;
+        
+}
+
+
+#menu{
+    width:300px;
+    float:left;
+
+}
+
+#bloc{
+    border-left: 5px solid red;
+    float:left;
+    width: 590px;
+}
+
+.bienvenue{
+	border: 1px solid blue;
+	width: 100%;
+}
+
+
+#clear{
+	clear:both;
+}
+
+label
+{
+	display: block;
+	width: 150px;
+	float: left;
+}
+
