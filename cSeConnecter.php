@@ -27,7 +27,7 @@
 						$reponse = $bdd->query('SELECT * FROM visiteur WHERE login = "'.$_POST['login'].'" ');
 						$connexion = $reponse->fetch();
 
-						if($_POST['mdp'] == $connexion['mdp'])
+						if(md5($_POST['mdp']) == $connexion['mdp'])
 						{
 							echo 'Connexion réussie';
 							$_SESSION['id'] =  $connexion['id'];

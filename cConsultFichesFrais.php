@@ -112,7 +112,7 @@ ob_start(); ?>
 						<?php
 					}
                                         echo '</table>';
-                                        echo $_POST['mois']; 
+                                       
                                         echo ' <center><a href="pdf.php?date='.$_POST['mois'].' ">Télécharger la page</a></center>';
 				}
 			?>

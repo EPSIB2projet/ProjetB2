@@ -158,8 +158,7 @@ $donnees4 = $reponse4->fetch();
                 {
 					include('include/config.php');
 
-					$sth = $bdd->prepare('INSERT INTO LigneFraisHorsForfait (id, idVisiteur, mois, libelle, date, montant) VALUES (NULL, :idVisiteur, :mois, :libelle, :date, :montant)');
-				
+                            $sth = $bdd->prepare('INSERT INTO LigneFraisHorsForfait (id, idVisiteur, mois, libelle, date, montant) VALUES (NULL, :idVisiteur, :mois, :libelle, :date, :montant)');
 		            $sth->bindValue(':idVisiteur', $_SESSION['id'], PDO::PARAM_STR);
 		            $sth->bindValue(':libelle', $_POST['libelle'], PDO::PARAM_STR);
 		            $sth->bindValue(':montant', $_POST['montant'], PDO::PARAM_STR);
